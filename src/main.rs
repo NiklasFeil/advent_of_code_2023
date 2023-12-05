@@ -1,5 +1,6 @@
 mod Day_1;
 mod Day_2;
+mod Day_5;
 
 use std::fs;
 
@@ -16,12 +17,12 @@ impl AoCSolver {
 
     fn solve(&self) -> u32 {
         let file_content = self.read_file_content();
-        Day_2::solution(file_content)
+        Day_5::solution(file_content)
     }
 }
 
 fn main() {
-    let solver: AoCSolver = AoCSolver { day: 2 };
+    let solver: AoCSolver = AoCSolver { day: 5 };
     let solution = solver.solve();
     println!("{:?}", solution);
 }
