@@ -72,3 +72,4 @@ fn solution_part_two(file_content: String) -> u32 {
 
     power_per_game.into_iter().reduce(|a, b| a + b).unwrap()
 }
+// iter.position sucht nach Element und gibt ihren Index aus (ähnlich find, nur dass Index zurückgegeben wird statt Element)

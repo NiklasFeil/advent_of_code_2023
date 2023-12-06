@@ -1,11 +1,11 @@
 use std::collections::HashMap;
 
 pub fn solution(file_content: String) -> u32 {
-    solution_part_two(file_content)
+    solution_part_one(file_content)
 }
 
 fn solution_part_one(file_content: String) -> u32 {
-    let lines = file_content.split("\n");
+    let lines = file_content.lines();
     let mut numbers: Vec<u32> = vec![];
     for line in lines {
         if line.is_empty() {
@@ -38,7 +38,7 @@ fn solution_part_one(file_content: String) -> u32 {
 }
 
 fn solution_part_two(file_content: String) -> u32 {
-    let lines = file_content.split("\n");
+    let lines = file_content.lines();
     let mut numbers: Vec<u32> = vec![];
     let digits = HashMap::from([
         ("one", 1),
